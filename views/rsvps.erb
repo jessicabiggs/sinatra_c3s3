@@ -8,16 +8,16 @@
 
   <h2>Attendees (25)</h2>
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
+    <% @acceptances.each do |rsvp| %>
+    <li> <%= rsvp[0] %> </li>
+    <% end %>
   </ul>
 
   <h2>Apologies (22)</h2>
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
+    <% @rejections.each do |rsvp| %>
+    <li> <%=rsvp [0] %> </li>
+    <% end %>
   </ul>
 
 
